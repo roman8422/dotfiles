@@ -3,9 +3,9 @@ set number
 
 " Tabs and spaces
 set expandtab " Insert spaces insted of tabs
-set tabstop=4 " Number of spaces in edit mode that a <Tab> in the file counts for.
-set shiftwidth=4 " Number of spases in normal mode inserted with < or >.
-set softtabstop=4 " Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>.
+set tabstop=2 " Number of spaces in edit mode that a <Tab> in the file counts for.
+set shiftwidth=2 " Number of spases in normal mode inserted with < or >.
+set softtabstop=2 " Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>.
 
 " Ignore case in search
 set ignorecase
