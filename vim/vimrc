@@ -1,51 +1,5 @@
-" Help on vim
-
-" c+r - redo
-" . - repeat last action
-
-"" Working with tabs
-" Opening & closing tabs
-" The following commands are useful for opening and closing tabs.
-" :tabe[dit] filename 	Open filename in a new tab
-" ctrl-W T 	Move current split window into its own tab
-" :tabc[lose] 	Close the current tab page and all its windows
-" :tabo[nly] 	Close all tabs apart from the current one
-
-"" Switching tabs
-" gt 	Move to next tab
-" gT 	Move to previous tab
-" #gt 	Move to tab number #
-
-"" Selection
-" gv - reselects last visual selection
-
-"" Motion
-" i} - text in the curly brases
-" :help text-objects
-
-"" Indentation
-" > and < move text on delimeter
-" = apply autoformat 
-
-" Autoreload of .vimrc
-autocmd! bufwritepost vimrc source %
-
-" Better copy & paste
-set clipboard=unnamed
-
-" Toggle auto-indenting for code paste
-" http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-set showmode
-set showmode
-
 " Line numbering
 set number
-
-" Enable mouse
-set mouse=a
-set backspace=2 " make backspace work like most other apps
 
 " Tabs and spaces
 set expandtab " Insert spaces insted of tabs
@@ -58,6 +12,3 @@ set ignorecase
 
 " Indentation on
 set autoindent
-
-vmap "+y :!xclip -f -sel clip
-map "+p :r!xclip -o -sel clip
