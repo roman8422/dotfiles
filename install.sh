@@ -3,6 +3,9 @@
 mv ~/.vimrc ~/.vimrc.old
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 
-mv  ~/.vim ~/.vim.old
+DIR="~/.vim"
+if [ -d "$DIR" ]; then
+    mv  $DIR $DIR.old
+fi
 ln -s ~/.dotfiles/vim/dotvim ~/.vim
 
