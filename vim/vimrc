@@ -1,7 +1,14 @@
 execute pathogen#infect()
 
 syntax on " Turn on color syntax highlighting
+
+" NEED TO CLARIFY
 filetype plugin indent on " Enable filetype detection, enable loading the indent file for specific file types. 
+
+"let g:solarized_termcolors=256
+"set t_Co=256
+"set background=dark " Enable solarized colorscheme
+"colorscheme solarized " Enable solarized colorscheme
 
 " Line numbering
 set number
@@ -17,3 +24,22 @@ set ignorecase
 
 " Indentation on
 set autoindent
+
+" Interpret numbers with leading zero (ex. 007) as decimal (not octal)
+set nrformats=
+
+" Add russian keyboard switch using C-^ and keyboard shorcuts (ex. C-w) in INSERT mode
+set keymap=russian-jcukenwin
+
+" Set initial insert and search keyboard to english instead of russian
+" These parameter are switched by C-^
+set iminsert=0
+set imsearch=0
+
+" Map russian keyboard to work in normal mode
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
+" Autoreload .vimrc after it was changed
+autocmd! BufWritePost .vimrc source % 
+
+
