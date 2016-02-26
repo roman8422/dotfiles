@@ -42,4 +42,5 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 " Autoreload .vimrc after it was changed
 autocmd! BufWritePost .vimrc source % 
 
-
+" This makes Vim display the match for the string while you are still typing it
+set incsearch
