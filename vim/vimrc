@@ -5,9 +5,11 @@ syntax on " Turn on color syntax highlighting
 " NEED TO CLARIFY
 filetype plugin indent on " Enable filetype detection, enable loading the indent file for specific file types. 
 
-"let g:solarized_termcolors=256
+" Uncoment below paragraph after configuring vim + tmux integration
 "set t_Co=256
 "set background=dark " Enable solarized colorscheme
+"set background=light " Enable solarized colorscheme
+"let g:solarized_termcolors=256
 "colorscheme solarized " Enable solarized colorscheme
 
 " Line numbering
