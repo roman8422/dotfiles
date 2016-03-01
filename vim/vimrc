@@ -21,8 +21,8 @@ set tabstop=4 " Number of spaces in edit mode that a <Tab> in the file counts fo
 set shiftwidth=4 " Number of spases in normal mode inserted with < or >.
 set softtabstop=4 " Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>.
 
-" Ignore case in search
-set ignorecase
+" Set smartcase in search (use case if any caps used)
+set smartcase
 
 " Indentation on
 set autoindent
@@ -46,3 +46,6 @@ autocmd! BufWritePost .vimrc source %
 
 " This makes Vim display the match for the string while you are still typing it
 set incsearch
+
+" Set search results highlighting
+set hls
