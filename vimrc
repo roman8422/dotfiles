@@ -49,3 +49,9 @@ set incsearch
 
 " Set search results highlighting
 set hls
+
+" Map paste togge to F2 and show visual feedback
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
