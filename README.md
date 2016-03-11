@@ -3,9 +3,9 @@ dotfiles
 
 Installation:
 
-    git clone https://github.com/roman8422/dotfiles ~/.dotfiles
+    git clone https://github.com/roman8422/dotfiles ~/
 
 Create symlinks by running script:
 
-    cd ~/.dotfiles
+    cd ~/dotfiles
     bash install.sh
