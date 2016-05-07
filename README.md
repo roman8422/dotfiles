@@ -3,7 +3,7 @@ dotfiles
 
 Installation:
 
-    git clone https://github.com/roman8422/dotfiles ~/
+    git clone https://github.com/roman8422/dotfiles ~/dotfiles
 
 Create symlinks by running script:
 
