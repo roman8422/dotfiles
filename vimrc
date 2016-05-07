@@ -56,3 +56,7 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
+" If 'modeline' is on 'modelines' gives the number of lines that is
+" checked for set commands.  If 'modeline' is off or 'modelines' is zero
+" no lines are checked.  See |modeline|.
+set modeline
