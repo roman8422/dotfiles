@@ -1,3 +1,5 @@
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = ['vim-ansible-yaml']
 execute pathogen#infect()
 
 syntax on " Turn on color syntax highlighting
