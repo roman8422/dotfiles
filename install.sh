@@ -30,3 +30,17 @@ if [ -a $CFG ]; then
    mv $CFG{,.$TIMESTAMP}
 fi
 ln -s ~/dotfiles/ansible.cfg $CFG
+
+DIFFHL=/usr/share/doc/git/contrib/diff-highlight/diff-highlight
+BN=$(basename $DIFFHL)
+if [ -f $DIFFHL ]; then
+    if [ ! -d ~/bin ]; then
+        mkdir ~/bin
+    fi
+    cp $DIFFHL ~/bin
+    if [ ! -x ~/bin/$BN ]; then
+        echo "Change permissions for $BN"
+        sudo chmod +x ~/bin/$BN
+    fi
+fi
+. ~/.profile
