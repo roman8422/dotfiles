@@ -20,9 +20,14 @@ if [ ! -d "$VAGRANTDDIR" ]; then
 fi
 
 VAGRANTFILE=$VAGRANTDDIR/Vagrantfile
-
 if [ -f $VAGRANTFILE ]; then
    mv $VAGRANTFILE{,.$TIMESTAMP}
 else
     ln -s ~/dotfiles/vagrant.d/Vagrantfile $VAGRANTFILE
 fi
+
+CFG=~/.ansible.cfg
+if [ -a $CFG ]; then
+   mv $CFG{,.$TIMESTAMP}
+fi
+ln -s ~/dotfiles/ansible.cfg $CFG
