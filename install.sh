@@ -44,3 +44,9 @@ if [ -f $DIFFHL ]; then
     fi
 fi
 . ~/.profile
+
+CFG=~/.tmux.conf
+if [ -a $CFG ]; then
+   mv $CFG{,.$TIMESTAMP}
+fi
+ln -s ~/dotfiles/tmux.conf $CFG
