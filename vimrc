@@ -65,3 +65,5 @@ set showmode
 " checked for set commands.  If 'modeline' is off or 'modelines' is zero
 " no lines are checked.  See |modeline|.
 set modeline
+
+set nosol " Do not move cursol to start of line. This applies to the commands: CTRL-D, CTRL-U, CTRL-B, CTRL-F, "G", "H", "M", "L", gg
