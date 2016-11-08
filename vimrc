@@ -27,6 +27,9 @@ set softtabstop=4 " Number of spaces that a <Tab> counts for while performing ed
 " Set smartcase in search (use case if any caps used)
 set smartcase
 
+" When 'ignorecase' and 'smartcase' are both on, if a pattern contains an uppercase letter, it is case sensitive, otherwise, it is not.
+set ignorecase
+
 " Indentation on
 set autoindent
 
