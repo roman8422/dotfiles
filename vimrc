@@ -24,11 +24,11 @@ set tabstop=4 " Number of spaces in edit mode that a <Tab> in the file counts fo
 set shiftwidth=4 " Number of spases in normal mode inserted with < or >.
 set softtabstop=4 " Number of spaces that a <Tab> counts for while performing editing operations, like inserting a <Tab> or using <BS>.
 
-" Set smartcase in search (use case if any caps used)
-set smartcase
+" Make search case insensitive
+set ignorecase
 
 " When 'ignorecase' and 'smartcase' are both on, if a pattern contains an uppercase letter, it is case sensitive, otherwise, it is not.
-set ignorecase
+set smartcase
 
 " Indentation on
 set autoindent
