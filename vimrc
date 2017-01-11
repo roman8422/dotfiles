@@ -67,3 +67,19 @@ set showmode
 set modeline
 
 set nosol " Do not move cursol to start of line. This applies to the commands: CTRL-D, CTRL-U, CTRL-B, CTRL-F, "G", "H", "M", "L", gg
+
+set laststatus=2 " Always show statusline
+
+set statusline=   " clear the statusline for when vimrc is reloaded
+set statusline+=%-3.3n\                      " buffer number
+set statusline+=%F\                          " file name
+set statusline+=%h%m%r%w                     " flags
+set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
+set statusline+=%{&fileformat}]              " file format
+set statusline+=%=                           " right align
+set statusline+=%{synIDattr(synID(line('.'),col('.'),1),'name')}\  " highlight
+set statusline+=%b,0x%-8B\                   " current char
+set statusline+=%c,                          " cursor column
+set statusline+=%l/%L                        " cursor line/total lines
+set statusline+=%-14.(%V%)\ %<%P             " offset
