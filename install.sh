@@ -43,7 +43,11 @@ if [ -f $DIFFHL ]; then
         sudo chmod +x ~/bin/$BN
     fi
 fi
-. ~/.profile
+
+PROFILE=~/.profile
+if [ -f $PROFILE ]; then
+    . $PROFILE
+fi
 
 CFG=~/.tmux.conf
 if [ -a $CFG ]; then
