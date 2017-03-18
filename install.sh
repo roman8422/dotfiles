@@ -54,3 +54,13 @@ if [ -a $CFG ]; then
    mv $CFG{,.$TIMESTAMP}
 fi
 ln -s ~/dotfiles/tmux.conf $CFG
+
+CSSHDIR=~/.clusterssh
+CSSHCONFIG=$CSSHDIR/config
+if [ ! -d "$CSSHDIR" ]; then
+    mkdir $CSSHDIR
+fi
+if [ -f $CSSHCONFIG ]; then
+   mv $CSSHCONFIG{,.$TIMESTAMP}
+fi
+ln -s ~/dotfiles/clusterssh/config $CSSHCONFIG
