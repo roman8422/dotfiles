@@ -62,9 +62,8 @@
 #window_tiling=yes
 #window_tiling_direction=right
 
-
-# 16 windows on 1920x1080 screen
-terminal_size=100x24
+# 9 windows on 1920x1080 screen
+terminal_size=103x200
 
 terminal_reserve_top=25
 
