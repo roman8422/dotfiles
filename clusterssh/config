@@ -62,10 +62,13 @@
 #window_tiling=yes
 #window_tiling_direction=right
 
-# 9 windows on 1920x1080 screen
+# 9 windows on 1920x1080 screen. cssh scales height automatically to fit screen size. Override below if necessary
 terminal_size=103x200
 
 terminal_reserve_top=25
 
 # Move windows to second monitor
 screen_reserve_left=1920
+#
+# 12 windows on 2560x1440 screen
+terminal_size=103x32
