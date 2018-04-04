@@ -67,8 +67,8 @@ terminal_size=103x200
 
 terminal_reserve_top=25
 
-# Move windows to second monitor
-screen_reserve_left=1920
-#
 # 12 windows on 2560x1440 screen
 terminal_size=103x32
+#
+# Move windows to second monitor
+screen_reserve_left=1920
