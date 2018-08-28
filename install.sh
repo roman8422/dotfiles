@@ -55,6 +55,12 @@ if [ -a $CFG ]; then
 fi
 ln -s ~/dotfiles/tmux.conf $CFG
 
+CFG=~/.bashrc
+if [ -a $CFG ]; then
+   mv $CFG{,.$TIMESTAMP}
+fi
+ln -s ~/dotfiles/bashrc $CFG
+
 CSSHDIR=~/.clusterssh
 CSSHCONFIG=$CSSHDIR/config
 if [ ! -d "$CSSHDIR" ]; then
