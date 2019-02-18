@@ -31,7 +31,7 @@ set ignorecase
 set smartcase
 
 " Indentation on
-set autoindent
+" set autoindent
 
 " Interpret numbers with leading zero (ex. 007) as decimal (not octal)
 set nrformats=
