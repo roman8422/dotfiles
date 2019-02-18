@@ -83,3 +83,11 @@ set statusline+=%b,0x%-8B\                   " current char
 set statusline+=%c,                          " cursor column
 set statusline+=%l/%L                        " cursor line/total lines
 set statusline+=%-14.(%V%)\ %<%P             " offset
+
+" vim-terraform configuration
+let g:terraform_fold_sections=1 " allow vim-terraform to automatically fold (hide until unfolded) sections of terraform code
+let g:terraform_remap_spacebar=1 " allow vim-terraform to re-map the spacebar to fold/unfold. This works in conjunction with let g:terraform_fold_sections=1 which should be enabled if you plan to use this feature
+let g:terraform_fmt_on_save=1    " run terraform fmt when saving *.tf and/or *.tfvars files
+let g:terraform_align=1          " this overrides the indentation level to 2 spaces to conform to the hashicorp style:
+
+" au FileType terraform setlocal foldlevel=0
